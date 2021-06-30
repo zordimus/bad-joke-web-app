@@ -1,6 +1,3 @@
-import mysql.connector
-import json
-
 from random import randrange
 from flask import Flask
 app = Flask(__name__)
