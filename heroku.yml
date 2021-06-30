@@ -4,6 +4,7 @@ build:
     
 # Lets try by using docker file CMD first
 run:
+  web: python3 main.py -m flask run --host=0.0.0.0 --port=$PORT
   worker: 
     command: 
       - python3 main.py -m flask run --host=0.0.0.0 --port=$PORT
