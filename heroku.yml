@@ -3,5 +3,5 @@ build:
     web: Dockerfile
     
 # Lets try by using docker file CMD first
-#run:
-#  web: bundle exec python3 src/main.py -m flask run --host=0.0.0.0
+run:
+  web: bundle exec python3 main.py -m flask run --host=0.0.0.0
