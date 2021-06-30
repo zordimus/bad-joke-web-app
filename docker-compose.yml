@@ -7,7 +7,9 @@ services:
   web:
     build:
      context: .
-    ports:
-      - 5000:5000
+    #Heroku reserves port dynamically
+    #If running locally remove comment marks    
+    #ports:
+    #  - 5000:5000
     volumes:
       - ./:/app
