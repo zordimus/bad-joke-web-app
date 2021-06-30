@@ -1,12 +1,13 @@
 # docker-compose up --build
+# in browser http://127.0.0.1:5000/
+
 version: '3.8'
 
 services:
- web:
-  build:
-   context: .
-  ports:
-  - 5000:5000
-  volumes:
-  - ./:/app
-  
+  web:
+    build:
+     context: .
+    ports:
+      - 5000:5000
+    volumes:
+      - ./:/app
